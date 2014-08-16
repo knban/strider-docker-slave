@@ -4,3 +4,4 @@ USER root
 RUN npm install -g mocha istanbul simple-stacktrace
 RUN chown -R strider:strider /home/strider
 USER strider
+RUN npm set registry 'http://sinopia.knban.com/'
