@@ -4,7 +4,7 @@ USER root
 RUN npm install -g mocha istanbul simple-stacktrace
 RUN chown -R strider /home/strider
 
-RUN apt-get install mongodb-server
+RUN apt-get -y install mongodb-server
 RUN mkdir -p /data/db && chown -R strider /data
 
 USER strider
