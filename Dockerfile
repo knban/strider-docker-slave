@@ -1,7 +1,7 @@
 FROM strider/strider-docker-slave
 MAINTAINER Keyvan Fatehi <keyvanfatehi@gmail.com>
 USER root
-RUN npm install -g mocha istanbul simple-stacktrace
+RUN npm install -g mocha istanbul simple-stacktrace codeclimate-test-reporter
 RUN chown -R strider /home/strider
 
 RUN apt-get -y install mongodb-server
